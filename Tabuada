@@ -1,0 +1,30 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ */
+
+package com.mycompany.mavenproject2;
+import java.util.Scanner;
+/**
+ *
+ * @author Aluno CA
+ */
+public class Mavenproject2 {
+//Tabuada
+    public static void main(String[] args) {
+        int valor;
+        int mult = 0;
+        int resultado = 0;
+        
+        Scanner tab = new Scanner (System.in);
+        System.out.println("Digite um numero");
+        valor = tab.nextInt();
+        
+        for(int x = 0; x < 10; x++){
+            resultado = valor * ++mult;
+            System.out.println(valor + "x" + mult + "=" + resultado);
+        }
+        
+        
+                
+    }
+}
